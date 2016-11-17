@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi</title>
+</head>
+{% block body %}
+<body>
+    <div>
+        <h4>All:</h4>
+        <table>
+            {% for l in pws %}
+                <tr>
+                    <td>{{ l }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+{% endblock %}
+</html>
